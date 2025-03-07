@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Symbolic Mixture-of-Experts - Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for Heterogeneous Reasoning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://dinobby.github.io/" target="_blank">Justin Chih-Yao Chen</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://sukwonyun.github.io/" target="_blank">Sukwon Yun</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://esteng.github.io/" target="_blank">Elias Stengel-Eskin</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://tianlong-chen.github.io/" target="_blank">Tianlong Chen</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.cs.unc.edu/~mbansal/" target="_blank">Mohit Bansal</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">UNC Chapel Hill</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/xxxxxxxx" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/dinobby/Symbolic-MoE/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/xxxxxxxx" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/animation.gif" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-left">
+          <span style="font-weight: 700;">Symbolic Mixture-of-Experts (Symbolic-MoE)</span> is an adpative framework
+          that recruits experts on the instance level (i.e., each problem would be solved by different experts), based
+          on the skills needed for each problem. This adaptiveness does not only deliver a better performance across
+          tasks, but also being more efficient than existing multi-agent framework (while the model pool is much
+          larger).
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Combining existing pre-trained expert LLMs is a promising avenue for scalably tackling large-scale and diverse tasks. However, selecting experts at the task level is often too coarse-grained, as heterogeneous tasks may require different expertise for each instance. To enable adaptive instance-level mixing of pre-trained LLM experts, we propose Symbolic-MoE, a symbolic, text-based, and gradient-free Mixture-of-Experts framework. Symbolic-MoE takes a fine-grained approach to selection by emphasizing skills, i.e., specialized subcategories or subtopics such as algebra in mathematics or molecular biology in biomedical reasoning. We propose a skill-based recruiting strategy that dynamically selects the most relevant set of expert LLMs for diverse reasoning tasks based on their strengths. Each selected expert then generates its own reasoning, resulting in k outputs from k experts, which are then synthesized into a final high-quality response by an aggregator. The aggregator is chosen based on its ability to integrate diverse reasoning outputs. We show that instance-level expert selection improves performance by a large margin but – when implemented naively – can introduce a high computational overhead due to the need for constant model loading and offloading. To address this, we implement a batch inference strategy that groups instances based on their assigned experts, ensuring each model will only be loaded once. This allows us to integrate 16 models on a single GPU with a time cost comparable to prior multi-agent baselines using 4 GPUs. Through extensive evaluations on diverse benchmarks (MMLU-Pro, GPQA, AIME, and MedMCQA), we demonstrate that Symbolic-MoE outperforms strong LLMs like GPT4o-mini, as well as multi- agent approaches, with an absolute average improvement of 8.15% over the best multi-agent baseline. Moreover, Symbolic-MoE removes the need for expensive multi-round discussions, outperforming discussion baselines with less computation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+          <h1 class="title is-3 has-text-centered">Comparison of Symbolic-MoE with Prior Multi-Agent Work</h1>
+          <img src="static/images/fig1.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-left">
+            <span style="font-weight: 700;">Figure 1</span>: (a) In prior work, a fixed set of task-level experts (e.g.,
+            Phi, Mistral, and Llama) is recruited to solve mathematical problems. Expert models then engage in multiple
+            rounds of discussion, making this approach resource-intensive. (b) In contrast, Symbolic-MoE adaptively
+            recruits instance-level experts via a skill based router. By generating only a single round of responses and
+            using an aggregator to synthesize the final output, our approach is both more performant and more efficient.
+          </h2>
+      </div>
+    </div>
+  </section>
+
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h1 class="title is-3 has-text-centered">Overview of Symbolic-MoE</h1>
+            <img src="static/images/fig2.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-left">
+              <span style="font-weight: 700;">Figure 2</span>: (a) Preprocessing: Given a validation set and a pool of
+              agents, we create model profiles and select an aggregator. (b) Inference: For each test example,
+              Symbolic-MoE activates the most relevant experts based on skill-based routing. These models generate CoT
+              responses, which the aggregator (chosen based on its ability to aggregate answers) synthesizes into a final
+              answer.
+            </h2>
+        </div>
+      </div>
+    </section>
+
+      <section class="section hero">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+              <h1 class="title is-3 has-text-centered">Main Results</h1>
+              <img src="static/images/main_result.png" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-left">
+                Comparison of Symbolic-MoE with single-model and multi-model baselines. Symbolic-MoE outperforms all
+                  multi-agent baselines and achieves performance comparable to strong proprietary models like GPT4o-mini & 70B models, while primarily operating with 7-8B models.
+              </h2>
+          </div>
+        </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Symbolic-MoE Shows Efficiency Gains</h2>
+            <div class="content has-text-centered">
+              <p class="subtitle">
+                via (1) Batch Inference (2) Skipping Multi-round Discussion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h1 class="title is-3 has-text-centered">Comparison of Different Inference Strategies</h1>
+            <img src="static/images/fig3.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-left">
+              <span style="font-weight: 700;">Figure 3</span>: Different approaches to achieving adaptiveness in
+            Symbolic-MoE, which uses different models for each instance. In a naive setup (I), k GPUs must be hosted
+            simultaneously, allowing immediate access to outputs from each model. Another naive setup (II) requires only
+            a
+            single GPU but involves constant loading and offloading of models to obtain outputs from the corresponding
+            model. Our scalable batch inference process (III) strikes a balance between (I) and (II). When models are
+            assigned to problems, we group samples by model and sequentially load the corresponding LLM onto a single
+            GPU
+            to generate outputs efficiently. Moreover, this approach still allows us to parallelize across GPUs if they
+            are available.
+            </h2>
+        </div>
+      </div>
+  </section>
+
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+          <h1 class="title is-3 has-text-centered">Analysis of the Efficiency Improvements</h1>
+          <img src="static/images/efficiency.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-left">
+            <span style="font-weight: 700;">Left</span>: Using our batch inference strategy, Symbolic-MoE can be run on a single GPU while the run time is comparable to the Mixture-of-Agents baseline with 4 GPUs. While our method is running on 4 GPUs, it further improves the run time.
+            <span style="font-weight: 700;">Right</span>: We found that given an optimal aggregator, the final performance without having any discussion is often similar to having a round of multi-agent discussion, followed by the aggregation.
+          </h2>
+      </div>
+    </div>
+</section>
+
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{chen2025symbolic,
+        title={Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for Scalable Heterogeneous Reasoning},
+        author={Chen, Justin Chih-Yao and Yun, Sukwon and Stengel-Eskin, Elias and Chen, Tianlong and Bansal, Mohit},
+        journal={arXiv preprint arXiv:xxxxxxxx},
+        year={2025}}
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
