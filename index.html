@@ -78,7 +78,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/xxxxxxxx" target="_blank"
+                  <a href="https://arxiv.org/pdf/2503.05641" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -111,7 +111,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/xxxxxxxx" target="_blank"
+                  <a href="https://arxiv.org/abs/2503.05641" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -132,7 +132,7 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="./static/images/animation.gif" alt="MY ALT TEXT" />
+        <img src="./static/images/animation.gif" alt="Symbolic-MoE" />
         <h2 class="subtitle has-text-left">
           <span style="font-weight: 700;">Symbolic Mixture-of-Experts (Symbolic-MoE)</span> is an adpative framework
           that recruits experts on the instance level (i.e., each problem would be solved by different experts), based
@@ -166,7 +166,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
           <h1 class="title is-3 has-text-centered">Comparison of Symbolic-MoE with Prior Multi-Agent Work</h1>
-          <img src="static/images/fig1.png" alt="MY ALT TEXT" />
+          <img src="static/images/fig1.png" alt="Symbolic-MoE" />
           <h2 class="subtitle has-text-left">
             <span style="font-weight: 700;">Figure 1</span>: (a) In prior work, a fixed set of task-level experts (e.g.,
             Phi, Mistral, and Llama) is recruited to solve mathematical problems. Expert models then engage in multiple
@@ -182,7 +182,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
             <h1 class="title is-3 has-text-centered">Overview of Symbolic-MoE</h1>
-            <img src="static/images/fig2.png" alt="MY ALT TEXT" />
+            <img src="static/images/fig2.png" alt="Symbolic-MoE" />
             <h2 class="subtitle has-text-left">
               <span style="font-weight: 700;">Figure 2</span>: (a) Preprocessing: Given a validation set and a pool of
               agents, we create model profiles and select an aggregator. (b) Inference: For each test example,
@@ -198,7 +198,7 @@
         <div class="container is-max-desktop">
           <div class="hero-body">
               <h1 class="title is-3 has-text-centered">Main Results</h1>
-              <img src="static/images/main_result.png" alt="MY ALT TEXT" />
+              <img src="static/images/main_result.png" alt="Symbolic-MoE" />
               <h2 class="subtitle has-text-left">
                 Comparison of Symbolic-MoE with single-model and multi-model baselines. Symbolic-MoE outperforms all
                   multi-agent baselines and achieves performance comparable to strong proprietary models like GPT4o-mini & 70B models, while primarily operating with 7-8B models.
@@ -226,7 +226,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
             <h1 class="title is-3 has-text-centered">Comparison of Different Inference Strategies</h1>
-            <img src="static/images/fig3.png" alt="MY ALT TEXT" />
+            <img src="static/images/fig3.png" alt="Symbolic-MoE" />
             <h2 class="subtitle has-text-left">
               <span style="font-weight: 700;">Figure 3</span>: Different approaches to achieving adaptiveness in
             Symbolic-MoE, which uses different models for each instance. In a naive setup (I), k GPUs must be hosted
@@ -247,7 +247,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
           <h1 class="title is-3 has-text-centered">Analysis of the Efficiency Improvements</h1>
-          <img src="static/images/efficiency.png" alt="MY ALT TEXT" />
+          <img src="static/images/efficiency.png" alt="Symbolic-MoE" />
           <h2 class="subtitle has-text-left">
             <span style="font-weight: 700;">Left</span>: Using our batch inference strategy, Symbolic-MoE can be run on a single GPU while the run time is comparable to the Mixture-of-Agents baseline with 4 GPUs. While our method is running on 4 GPUs, it further improves the run time.
             <span style="font-weight: 700;">Right</span>: We found that given an optimal aggregator, the final performance without having any discussion is often similar to having a round of multi-agent discussion, followed by the aggregation.
@@ -270,7 +270,7 @@
       <pre><code>@article{chen2025symbolic,
         title={Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for Scalable Heterogeneous Reasoning},
         author={Chen, Justin Chih-Yao and Yun, Sukwon and Stengel-Eskin, Elias and Chen, Tianlong and Bansal, Mohit},
-        journal={arXiv preprint arXiv:xxxxxxxx},
+        journal={arXiv preprint arXiv:2503.05641},
         year={2025}}
       </code></pre>
     </div>
