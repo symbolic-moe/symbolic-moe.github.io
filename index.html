@@ -5,27 +5,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Project Page of Symbolic-MoE: Adaptive Skill-based Routing for Heterogeneous Reasoning">
-  <meta property="og:title" content="Project Page of Symbolic-MoE: Adaptive Skill-based Routing for Heterogeneous Reasoning" />
-  <meta property="og:description" content="Project Page of Symbolic-MoE: Adaptive Skill-based Routing for Heterogeneous Reasoning" />
-  <meta property="og:url" content="https://symbolic-moe.github.io/" />
+  <meta name="description" content="Project Page of Skill-MoE: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills (Formerly Symbolic-MoE)">
+  <meta property="og:title" content="Project Page of Skill-MoE: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills (Formerly Symbolic-MoE)" />
+  <meta property="og:description" content="Project Page of Skill-MoE: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills (Formerly Symbolic-MoE)" />
+  <meta property="og:url" content="https://skill-moe.github.io/" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="https://symbolic-moe.github.io/static/images/preview.png" />
+  <meta property="og:image" content="https://skill-moe.github.io/static/images/preview.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
 
-  <meta name="twitter:title" content="Project Page of Symbolic-MoE: Adaptive Skill-based Routing for Heterogeneous Reasoning">
-  <meta name="twitter:description" content="Project Page of Symbolic-MoE: Adaptive Skill-based Routing for Heterogeneous Reasoning">
+  <meta name="twitter:title" content="Project Page of Skill-MoE: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills (Formerly Symbolic-MoE)">
+  <meta name="twitter:description" content="Project Page of Skill-MoE: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills (Formerly Symbolic-MoE)">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="https://symbolic-moe.github.io/static/images/preview.png">
+  <meta name="twitter:image" content="https://skill-moe.github.io/static/images/preview.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Symbolic-MoE">
+  <meta name="keywords" content="Skill-MoE, Symbolic-MoE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Symbolic Mixture-of-Experts - Project Page</title>
+  <title>Skill-Based Mixture-of-Experts - Project Page</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for Heterogeneous Reasoning</h1>
+            <h1 class="title is-1 publication-title">Skill-MoE: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills</h1>
             <h2 class="title is-4 publication-title">
                 ICML 2026
             </h2>
@@ -103,7 +103,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/dinobby/Symbolic-MoE/" target="_blank"
+                  <a href="https://github.com/dinobby/Skill-MoE/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -135,9 +135,9 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <img src="./static/images/animation.gif" alt="Symbolic-MoE" />
+        <img src="./static/images/animation.gif" alt="Skill-MoE" />
         <h2 class="subtitle has-text-left">
-          <span style="font-weight: 700;">Symbolic Mixture-of-Experts (Symbolic-MoE)</span> is an adaptive framework
+          <span style="font-weight: 700;">Skill-Based Mixture-of-Experts (Skill-MoE)</span> is an adaptive framework
           that recruits experts on the instance level (i.e., each problem would be solved by different experts), based
           on the skills needed for each problem. This adaptiveness does not only deliver a better performance across
           tasks, but also being more efficient than existing multi-agent framework (while the model pool is much
@@ -168,13 +168,13 @@
   <section class="section hero">
     <div class="container is-max-desktop">
       <div class="hero-body">
-          <h1 class="title is-3 has-text-centered">Comparison of Symbolic-MoE with Prior Multi-Agent Work</h1>
-          <img src="static/images/fig1.png" alt="Symbolic-MoE" />
+          <h1 class="title is-3 has-text-centered">Comparison of Skill-MoE with Prior Multi-Agent Work</h1>
+          <img src="static/images/fig1.png" alt="Skill-MoE" />
           <h2 class="subtitle has-text-left">
             <span style="font-weight: 700;">Figure 1</span>: (a) In prior work, a fixed set of task-level experts (e.g.,
             Phi, Mistral, and Llama) is recruited to solve mathematical problems. Expert models then engage in multiple
-            rounds of discussion, making this approach resource-intensive. (b) In contrast, Symbolic-MoE adaptively
-            recruits instance-level experts via a skill based router. By generating only a single round of responses and
+            rounds of discussion, making this approach resource-intensive. (b) In contrast, Skill-MoE adaptively
+            recruits instance-level experts via a skill-based router. By generating only a single round of responses and
             using an aggregator to synthesize the final output, our approach is both more performant and more efficient.
           </h2>
       </div>
@@ -184,12 +184,12 @@
     <section class="section hero">
       <div class="container is-max-desktop">
         <div class="hero-body">
-            <h1 class="title is-3 has-text-centered">Overview of Symbolic-MoE</h1>
-            <img src="static/images/fig2.png" alt="Symbolic-MoE" />
+            <h1 class="title is-3 has-text-centered">Overview of Skill-MoE</h1>
+            <img src="static/images/fig2.png" alt="Skill-MoE" />
             <h2 class="subtitle has-text-left">
               <span style="font-weight: 700;">Figure 2</span>: (a) Preprocessing: Given a validation set and a pool of
               agents, we create model profiles and select an aggregator. (b) Inference: For each test example,
-              Symbolic-MoE activates the most relevant experts based on skill-based routing. These models generate CoT
+              Skill-MoE activates the most relevant experts based on skill-based routing. These models generate CoT
               responses, which the aggregator (chosen based on its ability to aggregate answers) synthesizes into a final
               answer.
             </h2>
@@ -201,9 +201,9 @@
         <div class="container is-max-desktop">
           <div class="hero-body">
               <h1 class="title is-3 has-text-centered">Main Results</h1>
-              <img src="static/images/main_result.png" alt="Symbolic-MoE" />
+              <img src="static/images/main_result.png" alt="Skill-MoE" />
               <h2 class="subtitle has-text-left">
-                Comparison of Symbolic-MoE with single-model and multi-model baselines. Symbolic-MoE outperforms all
+                Comparison of Skill-MoE with single-model and multi-model baselines. Skill-MoE outperforms all
                   multi-agent baselines and achieves performance comparable to strong proprietary models like GPT4o-mini & 70B models, while primarily operating with 7-8B models.
               </h2>
           </div>
@@ -214,7 +214,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column">
-            <h2 class="title is-3">Symbolic-MoE Shows Efficiency Gains</h2>
+            <h2 class="title is-3">Skill-MoE Shows Efficiency Gains</h2>
             <div class="content has-text-centered">
               <p class="subtitle">
                 via (1) Batch Inference (2) Skipping Multi-round Discussion.
@@ -229,10 +229,10 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
             <h1 class="title is-3 has-text-centered">Comparison of Different Inference Strategies</h1>
-            <img src="static/images/fig3.png" alt="Symbolic-MoE" />
+            <img src="static/images/fig3.png" alt="Skill-MoE" />
             <h2 class="subtitle has-text-left">
               <span style="font-weight: 700;">Figure 3</span>: Different approaches to achieving adaptiveness in
-            Symbolic-MoE, which uses different models for each instance. In a naive setup (I), k GPUs must be hosted
+            Skill-MoE, which uses different models for each instance. In a naive setup (I), k GPUs must be hosted
             simultaneously, allowing immediate access to outputs from each model. Another naive setup (II) requires only
             a
             single GPU but involves constant loading and offloading of models to obtain outputs from the corresponding
@@ -250,9 +250,9 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
           <h1 class="title is-3 has-text-centered">Analysis of the Efficiency Improvements</h1>
-          <img src="static/images/efficiency.png" alt="Symbolic-MoE" />
+          <img src="static/images/efficiency.png" alt="Skill-MoE" />
           <h2 class="subtitle has-text-left">
-            <span style="font-weight: 700;">Left</span>: Using our batch inference strategy, Symbolic-MoE can be run on a single GPU while the run time is comparable to the Mixture-of-Agents baseline with 4 GPUs. While our method is running on 4 GPUs, it further improves the run time.
+            <span style="font-weight: 700;">Left</span>: Using our batch inference strategy, Skill-MoE can be run on a single GPU while the run time is comparable to the Mixture-of-Agents baseline with 4 GPUs. While our method is running on 4 GPUs, it further improves the run time.
             <span style="font-weight: 700;">Right</span>: We found that given an optimal aggregator, the final performance without having any discussion is often similar to having a round of multi-agent discussion, followed by the aggregation.
           </h2>
       </div>
@@ -270,8 +270,8 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{chen2025symbolic,
-        title={Symbolic Mixture-of-Experts: Adaptive Skill-based Routing for Scalable Heterogeneous Reasoning},
+      <pre><code>@article{chen2025skillmoe,
+        title={Skill-Based Mixture-of-Experts: Adaptive Routing for Heterogeneous Reasoning via Inferred Skills},
         author={Chen, Justin Chih-Yao and Yun, Sukwon and Stengel-Eskin, Elias and Chen, Tianlong and Bansal, Mohit},
         journal={arXiv preprint arXiv:2503.05641},
         year={2025}}
